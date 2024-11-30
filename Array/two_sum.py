@@ -15,8 +15,8 @@ class Solution:
             diff = target - nums[index]
             if diff in seen:
                 return [seen[diff], index]
-            else:
-                seen[nums[index]] = index
+            seen[nums[index]] = index
+        raise ValueError("Solution not found!")
 
 nums = [2,7,11,15]
 target = 9
